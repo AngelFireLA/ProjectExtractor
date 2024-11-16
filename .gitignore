@@ -1,3 +1,5 @@
 
 /.idea
 project_extracted.txt
+final_file.txt
+*.pyc
