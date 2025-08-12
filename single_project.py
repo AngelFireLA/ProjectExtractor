@@ -2,11 +2,11 @@ import os
 
 def main(project_folder, output_file):
 # Configurable variables
-    exclude_file_names = [f"geo{i}.txt" for i in range(1, 6)] +['README.md', '.env', '.gitignore', 'positions.txt', 'messages.txt', 'messages_currated.txt', 'output_v53.txt', 'output_v29.txt', 'v29.txt', 'v53.txt', 'pdata.txt', 'LICENSE.txt']
+    exclude_file_names = [f"geo{i}.txt" for i in range(1, 6)] +['README.md', '.env', '.gitignore', 'positions.txt', 'messages.txt', 'messages_currated.txt', 'output_v53.txt', 'output_v29.txt', 'v29.txt', 'v53.txt', 'pdata.txt', 'LICENSE.txt', 'particle_emitters.json', 'image_cache.json', 'all_projects.txt', '100_equal_positions.txt', '__init__.py']
     exclude_file_extensions = ['.pyc', '.env']
-    exclude_folder_names = ['.git', '.idea', '.venv', '__pycache__', 'venv', 'old brawler maker stuff', 'node_modules', 'single_ss', 'player_cards', 'player_images', 'player_images - Copie', "domestic football results", 'global football resuts', 'transfermarkt graphs', 'international results graphs', 'pyla_main.build', 'pyla_main.dist', 'dataset gatherer', 'all_images', 'default_assets', 'brawler_icons', 'brawler_icons2', 'music', 'pdf_de_salons', 'salons en json + dossier images', 'salons txt', 'cleaned_journey', 'journey', 'journal_txt_processed', 'needed text files', 'output']
+    exclude_folder_names = ['.git', '.idea', '.venv', '__pycache__', 'venv', 'old brawler maker stuff', 'node_modules', 'single_ss', 'player_cards', 'player_images', 'player_images - Copie', "domestic football results", 'global football resuts', 'transfermarkt graphs', 'international results graphs', 'pyla_main.build', 'pyla_main.dist', 'dataset gatherer', 'all_images', 'default_assets', 'brawler_icons', 'brawler_icons2', 'music', 'pdf_de_salons', 'salons en json + dossier images', 'salons txt', 'cleaned_journey', 'journey', 'journal_txt_processed', 'needed text files', 'output', 'runs', 'skin_seg_3', 'anime', 'realistic1', 'realistic2', 'realistic3', 'realistic4', 'realistic5', 'realistic6', 'realistic7', 'realistic8', 'realistic9', 'all', 'output_dataset2', 'output_dataset', 'train1', 'train2', 'train3', 'train4', 'train5', 'train6', 'train7', 'train8', 'train9', 'train10', 'test1', 'test2', 'test3', 'test4', 'test5', 'test6', 'test7', 'test8', 'test9', 'test10', 'output_dataset3', 'output_dataset4', 'output_dataset5', 'dataset2', 'dataset', 'conversations_output', 'conversations_output2', 'conversations_output3', 'conversations_output4', 'conversations_output5', 'conversations_output6', 'conversations_output7', 'conversations_output8', 'conversations_output9', 'conversations_output10', 'output_dataset6', 'output_dataset7', 'output_dataset8', 'output_dataset9', 'output_dataset10', 'BrawlStarsOfflinev29', "failed_guess", "flags1", "flags2", "flags3", "flags4", "flags5", "flags6", "flags7", "flags8", "flags9", "flags", "failed_guess"]
 
-    extractable_extensions = ['.py', '.js', '.html', '.css', '.txt']
+    extractable_extensions = ['.py', '.js', '.html', '.css', '.yaml', '.mcmeta', '.mcfunction', '.toml']
 
 
     extension_language_map = {
@@ -109,7 +109,7 @@ def main(project_folder, output_file):
     return file_content
 
 if __name__ == '__main__':
-    project_folder = r'C:\Dev\Python\StreamBattle-du-bled'  # Path to the project folder
+    project_folder = r'C:\Dev\Python\PylaAI'  # Path to the project folder
     output_file = 'project_extracted.txt'
     file_content = main(project_folder, output_file)
     with open(output_file, 'w', encoding='utf-8') as f:

@@ -4,7 +4,7 @@ import single_project
 
 projects_folder1 = r'C:\Dev\Python'
 final_file = 'final_file.txt'
-excluded_folders = ["archives"]
+excluded_folders = ["archives", "GPTplatformer", "GameLauncher-L1ST", "pygame-fighter-tutorial", "brawler maker v1", "basardAI", "pygame-fighter-tutorial", "PokemonTCGP-BattleSimulator", "LaBoulangerieRésumeurRP", "AventureTextuelle-L1ST", "BaguetteRisque"]
 final_file_content = """"""
 for folder in os.listdir(projects_folder1):
     print(folder)
@@ -24,7 +24,7 @@ with open(final_file, 'a', encoding='utf-8') as f_out:
 
 projects_folder2 = r'C:\Dev\Python\archives'
 final_file = 'final_file.txt'
-excluded_folders = ["archives"]
+excluded_folders = ["archives", "GPTplatformer", "GameLauncher-L1ST", "pygame-fighter-tutorial", "brawler maker v1", "basardAI", "pygame-fighter-tutorial"]
 print("\n")
 for folder in os.listdir(projects_folder2):
     print(folder)
